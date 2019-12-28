@@ -1,7 +1,7 @@
 {
-  "name": "markdown-index",
-  "version": "1.0.0",
-  "description": "自动生成markDown 文档的索引导航",
+  "name": "ts-node",
+  "version": "0.0.1",
+  "description": "ts-node",
   "main": "./src/main.js",
   "scripts": {
     "lint": "eslint --ext .ts ./",
@@ -34,14 +34,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/module-creator/markdown-index.git"
+    "url": "git+https://github.com/cli-template-build/ts-node.git"
   },
   "author": "yanle 331393627@qq.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/module-creator/markdown-index/issues"
+    "url": "https://github.com/cli-template-build/ts-node/issues"
   },
-  "homepage": "https://github.com/module-creator/markdown-index#readme",
+  "homepage": "https://github.com/cli-template-build/ts-node#readme",
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
