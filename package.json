@@ -1,0 +1,64 @@
+{
+  "name": "markdown-index",
+  "version": "1.0.0",
+  "description": "自动生成markDown 文档的索引导航",
+  "main": "./src/main.js",
+  "scripts": {
+    "lint": "eslint --ext .ts ./",
+    "lint:fix": "yarn lint --fix",
+    "type-check": "tsc",
+    "prettier": "prettier --write",
+    "commit": "commit",
+    "test": "jest"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,ts,tsx}": [
+      "yarn prettier",
+      "git add"
+    ],
+    "**/*.{ts,spec.js,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/module-creator/markdown-index.git"
+  },
+  "author": "yanle 331393627@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/module-creator/markdown-index/issues"
+  },
+  "homepage": "https://github.com/module-creator/markdown-index#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@commitlint/prompt-cli": "^8.2.0",
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.1",
+    "@typescript-eslint/eslint-plugin": "^2.13.0",
+    "@typescript-eslint/parser": "^2.13.0",
+    "commitizen": "^4.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.4"
+  }
+}
