@@ -1,6 +1,6 @@
 {
   "name": "ts-node",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ts-node",
   "main": "./src/main.js",
   "scripts": {
